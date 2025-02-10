@@ -1,6 +1,7 @@
 import { FileDown } from "lucide-react";
 import { Spotlight } from "./ui/spotlight-new";
 import { TextGenerateEffect } from "./ui/text-generate-effect";
+// import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -32,12 +33,14 @@ const Hero = () => {
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
             Hi! I&apos;m Jude, a Frontend Engineer         
           </p>
-        
+
         <button className="inline-flex gap-3 h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
+          <a href="/Resume - Jude Eseka.pdf" download className="inline-flex gap-3 justify-center items-center">
           Download Resume
           <span>
             <FileDown />
           </span>
+          </a>
         </button>
         </div>
       </div>
