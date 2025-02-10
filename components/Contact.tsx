@@ -65,17 +65,6 @@ const Contact = () => {
         <p className="mb-2 text-lg text-center">Contact</p>
       <h2 className="text-5xl text-center">Get in touch</h2>
 
-      <div
-        className="h-screen w-full dark:bg-slate-900 from-slate-900 bg-white dark:bg-grid-white/[0.03] bg-grid-black-100/[0.2]
-       absolute top-0 left-0 flex items-center justify-center"
-      >
-        {/* Radial gradient for the container to give a faded look */}
-        <div
-          className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-slate-900
-         bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"
-        />
-      </div>
-
     <div className="max-w-md w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input mt-8 border">
       <form ref={form} onSubmit={handleSubmit}>
         <LabelInputContainer className="mb-4">

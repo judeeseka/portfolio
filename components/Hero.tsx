@@ -5,7 +5,7 @@ import { TextGenerateEffect } from "./ui/text-generate-effect";
 
 const Hero = () => {
   return (
-    <section className="pb-20 pt-36" id="home">
+    <section className="pb-20 pt-36 max-h-screen" id="home">
       <Spotlight />
 
       <div
