@@ -15,7 +15,10 @@ const Projects = () => {
         {projects.map((project) => (
             <CardContainer key={project.id}>
               <CardBody className="bg-gray-50 group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-auto rounded-xl p-6 border ">
-                <CardItem translateZ="100" className="w-full h-56 mt-4">
+                <CardItem 
+                // translateZ="100"
+                translateZ={100}
+                 className="w-full h-56 mt-4">
                   <Image
                     src={project.imageUrl}
                     height={project.imageHeight}
@@ -25,14 +28,16 @@ const Projects = () => {
                   />
                 </CardItem>
                 <CardItem
-                  translateZ="50"
+                  // translateZ="50"
+                  translateZ={50}
                   className="text-xl font-bold text-neutral-600 dark:text-white"
                 >
                   {project.title}
                 </CardItem>
                 <CardItem
                   as="p"
-                  translateZ="60"
+                  // translateZ="60"
+                  translateZ={60}
                   className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
                 >
                   {project.description}
@@ -40,7 +45,10 @@ const Projects = () => {
 
                 <CardItem className="flex flex-wrap gap-2 my-4">
                   {project.tags.map((tag, tagIndex) => (
-                    <CardItem as="span" translateZ="60" key={tagIndex} className="chip">
+                    <CardItem as="span" 
+                    // translateZ="60"
+                    translateZ={60}
+                     key={tagIndex} className="chip">
                       {tag}
                     </CardItem>
                   ))}
@@ -49,7 +57,8 @@ const Projects = () => {
                 <CardItem className="flex gap-4">
                   <CardItem
                   as="a"
-                  translateZ="50"
+                  // translateZ="50"
+                  translateZ={50}
                     href={project.links.github}
                     className="hover:text-primary/80 transition-colors"
                   >
@@ -57,7 +66,8 @@ const Projects = () => {
                   </CardItem>
                   <CardItem
                   as="a"
-                  translateZ="50"
+                  // translateZ="50"
+                  translateZ={50}
                     href={project.links.live}
                     className="hover:text-primary/80 transition-colors"
                   >
