@@ -61,11 +61,11 @@ const Contact = () => {
     ;
   };
   return (
-    <section id='contact' className="py-20">
+    <section id='contact' className="py-20 z-10 relative">
         <p className="mb-2 text-lg text-center">Contact</p>
       <h2 className="text-5xl text-center">Get in touch</h2>
 
-    <div className="max-w-md w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input mt-8 border">
+    <div className="max-w-md w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input mt-8 bg-slate-900 border shadow">
       <form ref={form} onSubmit={handleSubmit}>
         <LabelInputContainer className="mb-4">
           <Label htmlFor="name">Name</Label>

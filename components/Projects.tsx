@@ -7,11 +7,11 @@ import { RiExternalLinkLine } from "react-icons/ri";
 
 const Projects = () => {
   return (
-    <section id="projects" className="py-20">
+    <section id="projects" className="py-20 relative z-10">
       <p className="mb-2 text-lg text-center">Portfolio</p>
       <h2 className="text-5xl text-center">Recent Projects</h2>
 
-      <div className="grid auto-rows-fr grid-cols-[repeat(auto-fit,_minmax(320px,_1fr))] gap-8 w-full mt-10">
+      <div className="grid auto-rows-fr grid-cols-[repeat(auto-fit,_minmax(320px,_1fr))] gap-8 w-full mt-10 bg-slate-900">
         {projects.map((project) => (
             <CardContainer key={project.id}>
               <CardBody className="bg-gray-50 group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-auto rounded-xl p-6 border ">

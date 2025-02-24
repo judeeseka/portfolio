@@ -4,7 +4,7 @@ import { FiGithub, FiLinkedin, FiTwitter } from 'react-icons/fi'
 
 const Footer = () => {
   return (
-    <footer className="flex pb-10 md:flex-row flex-col justify-between items-center">
+    <footer className="flex pb-10 md:flex-row flex-col justify-between items-center z-10 relative">
         <p className="md:text-base text-sm md:font-normal font-light">
           Copyright © 2025 Jude Eseka
         </p>
