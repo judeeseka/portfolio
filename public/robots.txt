@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://judeeseka-portfolio.vercel.app/sitemap.xml
