@@ -3,6 +3,9 @@ import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Projects from "@/components/Projects";
+import EngineeringFocus from "@/components/EngineeringFocus";
+import CaseStudies from "@/components/CaseStudies";
+import TechStack from "@/components/TechStack";
 import { FloatingNav } from "@/components/ui/floating-navbar";
 import { navItems } from "@/lib/constants";
 
@@ -22,8 +25,11 @@ export default function Home() {
       </div>
         <FloatingNav navItems={navItems} />
         <Hero />
-        <About />
+        <EngineeringFocus />
         <Projects />
+        <CaseStudies />
+        <About />
+        <TechStack />
         <Contact />
         <Footer />
       </div>
