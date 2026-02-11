@@ -2,30 +2,36 @@ import React from "react";
 
 const About = () => {
   return (
-    <section id="about" className="py-20 relative z-10 border-t border-slate-800/60">
-      <p className="mb-2 text-lg text-center">Introduction</p>
-      <h2 className="text-5xl text-center">About me</h2>
+    <section
+      id="about"
+      className="py-16 md:py-24 relative z-10 border-t border-slate-800/50"
+    >
+      <p className="text-center text-slate-400 text-sm font-medium tracking-wider uppercase mb-2">
+        Introduction
+      </p>
+      <h2 className="text-3xl md:text-5xl font-semibold text-center text-white mb-10 md:mb-12">
+        About me
+      </h2>
 
-      <div className="mt-8 max-w-3xl mx-auto text-sm md:text-base leading-relaxed text-slate-200 space-y-3 px-4 md:px-0">
+      <div className="max-w-2xl mx-auto text-sm md:text-base leading-relaxed text-slate-300 space-y-4 px-4 md:px-0">
         <p>
-          I&apos;ve spent the last few years building and maintaining production
-          frontends for SaaS products, internal tools, and multi-role
-          platforms.
+          Over the past few years, I&apos;ve built and maintained production
+          frontends for SaaS products, internal tools, and multi-role platforms.
         </p>
         <p>
-          Most of my work sits at the intersection of UI and systems — taking
-          messy workflows, edge cases, and real constraints and turning them
-          into interfaces teams can rely on every day.
+          My work lives at the intersection of UI and systems, translating
+          complex workflows, edge cases, and real-world constraints into
+          reliable interfaces teams depend on daily.
         </p>
         <p>
-          I work best in close collaboration with product, design, and backend
-          engineers, and I&apos;m comfortable owning a feature from rough idea
-          through implementation, iteration, and long-term maintenance.
+          I collaborate closely with product, design, and backend engineers, and
+          I&apos;m comfortable owning features end-to-end — from rough concepts
+          to long-term iteration and maintenance.
         </p>
         <p>
-          I&apos;ve led frontend efforts on smaller teams, set patterns others
-          could follow, and I care a lot about leaving codebases in a better,
-          more understandable state than I found them.
+          I&apos;ve led frontend efforts on small teams, established patterns
+          that scale, and I care deeply about leaving codebases clearer and more
+          maintainable than I found them.
         </p>
       </div>
     </section>

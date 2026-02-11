@@ -13,22 +13,23 @@ const EngineeringFocus = () => {
   return (
     <section
       id="engineering-focus"
-      className="py-20 relative z-10 border-t border-slate-800/60"
+      className="py-16 md:py-24 relative z-10 border-t border-slate-800/50"
     >
-      <p className="mb-2 text-lg text-center text-slate-300">
-        How I approach frontend engineering
+      <p className="text-center text-slate-400 text-sm font-medium tracking-wider uppercase mb-2">
+        How I think
       </p>
-      <h2 className="text-3xl md:text-5xl text-center font-semibold">
+      <h2 className="text-3xl md:text-5xl font-semibold text-center text-white mb-10 md:mb-12">
         Engineering focus
       </h2>
 
-      <div className="mt-10 grid gap-4 md:gap-6 md:grid-cols-2">
+      <div className="grid gap-4 sm:grid-cols-2">
         {bullets.map((item, index) => (
           <div
             key={index}
-            className="rounded-xl border border-slate-800 bg-slate-900/60 p-4 md:p-5 text-sm md:text-base leading-relaxed"
+            className="rounded-xl border border-slate-800/80 bg-slate-900/50 p-4 md:p-5 text-sm md:text-base leading-relaxed text-slate-300 hover:border-slate-700/60 transition-colors"
           >
-            <p className="text-slate-200">• {item}</p>
+            <span className="text-emerald-400/80 mr-2">·</span>
+            {item}
           </div>
         ))}
       </div>

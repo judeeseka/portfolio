@@ -73,11 +73,18 @@ const Contact = () => {
     ;
   };
   return (
-    <section id='contact' className="py-20 z-10 relative">
-        <p className="mb-2 text-lg text-center">Contact</p>
-      <h2 className="text-5xl text-center">Get in touch</h2>
+    <section id="contact" className="py-16 md:py-24 z-10 relative border-t border-slate-800/50">
+      <p className="text-center text-slate-400 text-sm font-medium tracking-wider uppercase mb-2">
+        Contact
+      </p>
+      <h2 className="text-3xl md:text-5xl font-semibold text-center text-white mb-4">
+        Get in touch
+      </h2>
+      <p className="text-center text-slate-400 text-sm max-w-md mx-auto mb-8">
+        Open to frontend roles at startups and product companies. Say hello.
+      </p>
 
-    <div className="max-w-md w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input mt-8 bg-slate-900 border shadow">
+    <div className="max-w-md w-full mx-auto rounded-2xl p-5 md:p-8 border border-slate-800/80 bg-slate-900/50 shadow-xl shadow-black/20">
       <form ref={form} onSubmit={handleSubmit(onSubmit)}>
         <LabelInputContainer className="mb-4">
           <Label htmlFor="name">Name</Label>
@@ -117,25 +124,14 @@ const Contact = () => {
 
         </LabelInputContainer>
 
-        <button 
-        disabled={isLoading}
-        className={cn("inline-flex w-full gap-3 h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50", {
-          "cursor-not-allowed" : isLoading
-        })}
+        <button
+          type="submit"
+          disabled={isLoading}
+          className={cn(
+            "inline-flex w-full gap-2 h-12 items-center justify-center rounded-xl font-medium text-white bg-emerald-600/90 hover:bg-emerald-500/90 border border-emerald-500/30 transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-400/50 disabled:opacity-50 disabled:cursor-not-allowed"
+          )}
         >
-          {
-            isLoading ? (
-              "Sending..."
-            ) : ( <>
-              <p>Send Message</p>
-          <span>
-            <Send />
-          </span>
-            </>
-              
-            )
-          }
-          
+          {isLoading ? "Sending…" : (<>Send message <Send className="w-4 h-4" /></>)}
         </button>
       </form>
 
