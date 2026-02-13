@@ -11,68 +11,68 @@ export const projects = [
     id: 2,
     title: "Easyserve",
     description:
-      "A marketplace that connects clients with vetted artisans and service providers in their area.",
-    tags: ["React", "TypeScript", "Tailwind"],
+      "A service platform that connects clients with vetted artisans and service providers in their area.",
+    tags: ["React", "TypeScript", "Express.js"],
     role: "Sole Frontend Engineer",
-    productType: "Multi-role marketplace",
-    techStackShort: "React, TypeScript, Tailwind, REST APIs",
+    techStackShort: "React, TypeScript, Tailwind, Express.js",
     imageUrl: "/easyserve.avif",
     imageWidth: 1318,
     imageHeight: 619,
     links: {
-      github: "#",
+      github: "",
       live: "https://easyserve.com.ng/",
     },
     caseStudy: {
       overview:
-        "Easyserve is a two-sided marketplace for clients and artisans where users can discover, book, and review services through a responsive web app.",
-      audience:
-        "End-users looking for reliable artisans and service providers, plus artisans managing their bookings and availability.",
+        "Easyserve is a multi-role service platform connecting clients with vetted artisans, while providing admins with tools to manage bookings, payments, and platform operations.",
+      // audience:
+      //   "End-users looking for reliable artisans and service providers, plus artisans managing their bookings and availability.",
       problem:
         "Service discovery was fragmented across word-of-mouth and unstructured social posts, making it hard to compare providers or trust quality.",
       roleOwnership:
-        "Owned the entire frontend implementation from project setup and routing to building reusable UI components and integrating with the backend.",
+        "I led frontend development while collaborating with backend and product teams to design and deliver end-to-end user flows.",
       keyDecisions: [
-        "Modelled the UI around distinct roles (client vs artisan) so navigation, actions, and dashboards were tailored to the right context.",
-        "Implemented reusable listing, search, and filter components that could be reconfigured for different service categories without duplicating logic.",
-        "Optimized perceived performance with skeleton states, image lazy-loading, and route-based code splitting to keep interactions smooth on mobile.",
+        "Designed and built role-based dashboards for clients, artisans, and admins",
+        "Implemented booking, confirmation, and review flows aligned with business logic",
+        "Contributed to backend logic using Express.js for validation and flow consistency",
       ],
       impact:
-        "Made it significantly easier for users to compare providers and complete bookings on mobile, while giving artisans a clearer view of demand and upcoming work.",
+        "Improved clarity and usability across multiple user roles as well as reducing operational overhead for admins managing services",
     },
   },
   {
     id: 3,
-    title: "Workflow Studio",
+    title: "Homestart",
     description:
-      "A lightweight builder for automating internal workflows and approvals without writing code.",
-    tags: ["Next.js", "TypeScript", "Tailwind"],
-    role: "Frontend Engineer",
+      "Explore preconstruction homes with customizable options and transparent pricing.",
+    tags: ["Next.js", "TypeScript", "Firebase"],
+    role: "Software Developer",
     productType: "Product MVP",
-    techStackShort: "Next.js, TypeScript, Tailwind, React Query",
+    techStackShort: "Next.js, TypeScript, Tailwind, React Query, Firebase",
     imageUrl: "/homestart.avif",
     imageWidth: 1153,
     imageHeight: 631,
     links: {
-      github: "#",
-      live: "#",
+      github: "",
+      live: "https://homestart-app.vercel.app/",
     },
     caseStudy: {
       overview:
-        "Workflow Studio is an MVP that lets non-technical teams compose simple approval and notification flows through a drag-and-drop interface.",
-      audience:
-        "Ops and business teams that need lightweight automation without involving engineering for every process change.",
+        "HomeStart is a product MVP focused on helping users gain confidence in purchasing new-build homes through a combination of structured property listings and educational content.",
+      // audience:
+      //   "Ops and business teams that need lightweight automation without involving engineering for every process change.",
       problem:
-        "Teams relied on manual email approvals and ad-hoc checklists, which were easy to forget and impossible to track over time.",
+        "Many first-time buyers struggle with understanding preconstruction properties and available customization options. Existing platforms focused on listings alone, offering little educational support.",
       roleOwnership:
-        "Implemented the core canvas experience, node editor, and configuration panels, and collaborated on the data model with backend engineers.",
+        "Worked within an accelerator-led agile team to design and implement the frontend experience.",
       keyDecisions: [
-        "Separated visual canvas state from persisted workflow definitions so complex UI interactions didn’t compromise data integrity.",
-        "Used React Query for data fetching, caching, and mutation flows to keep the UI responsive even when saving or updating workflows.",
-        "Introduced a simple versioning model so users could safely iterate on workflows without breaking live processes.",
+        "Participated in product discovery sessions to define user personas and feature scope",
+        "Built filterable property listings with customization options (kitchen, bathroom, finishes)",
+        "Developed a content-first blog section to educate users on new-build ownership",
+        "Integrated Firebase for backend data management and content delivery",
       ],
       impact:
-        "Provided a clear, visual way for teams to standardize recurring workflows and reduce the amount of back-and-forth with engineering.",
+        "Improved user confidence through educational content, balancing structured data and content-driven UX",
     },
   },
   {
@@ -93,20 +93,20 @@ export const projects = [
     },
     caseStudy: {
       overview:
-        "Carefinder is a responsive web app that surfaces nearby hospitals, clinics, and healthcare providers with filters for distance, specialization, and availability.",
+        "Carefinder is a web platform that helps users quickly locate hospitals and healthcare services within their region.",
       audience:
         "Patients and caregivers who need to quickly find relevant healthcare services in their area.",
       problem:
         "Finding the right healthcare facility was slow and manual, especially in unfamiliar locations, and existing search tools were either outdated or not optimized for mobile.",
       roleOwnership:
-        "Implemented the frontend application, data fetching flows, and UI for maps, search, and filters while collaborating closely with backend and design.",
+        "Implemented the entire frontend application, data fetching flows, and UI for search and filters etc.",
       keyDecisions: [
-        "Designed the layout mobile-first to ensure location-based search and map interactions were usable on small screens.",
+        "Built search, filtering, and pagination systems optimized for large datasets",
         "Implemented debounced search and query caching so users could refine filters without feeling any lag.",
-        "Separated data fetching concerns from presentation with a clear hooks layer to keep components focused and testable.",
+        "Implemented efficient UI rendering to handle 2,500+ provider records.",
       ],
       impact:
-        "Gave users a faster way to discover relevant healthcare options, especially on mobile devices where most searches originated.",
+        "Gave users a faster way to discover relevant healthcare options with maintained performance at scale",
     },
   },
 ];

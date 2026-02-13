@@ -83,7 +83,7 @@ const Contact = () => {
         Get in touch
       </h2>
       <p className="text-center text-slate-400 text-sm max-w-md mx-auto mb-8">
-        Have a product idea, role, or collaboration in mind? Let’s talk.
+        Have a product idea, role, or collaboration in mind? Let&apos;s talk.
       </p>
 
       <div className="max-w-md w-full mx-auto rounded-2xl p-5 md:p-8 border border-slate-800/80 bg-slate-900/50 shadow-xl shadow-black/20">

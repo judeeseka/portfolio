@@ -106,12 +106,6 @@ export default function CaseStudyModal({
                   Overview
                 </h3>
                 <p>{project.caseStudy.overview}</p>
-                <p className="mt-1 text-slate-300">
-                  <span className="font-medium text-slate-100">
-                    Who it&apos;s for:
-                  </span>{" "}
-                  {project.caseStudy.audience}
-                </p>
               </div>
               <div>
                 <h3 className="font-semibold text-emerald-600 mb-1">Problem</h3>

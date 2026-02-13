@@ -4,7 +4,10 @@ import { TextGenerateEffect } from "../ui/text-generate-effect";
 
 const Hero = () => {
   return (
-    <section className="md:pb-24 py-10 md:pt-32" id="home">
+    <section
+      className="pb-10 sm:pb-24 pt-24 md:pt-32 h-screen sm:h-full"
+      id="home"
+    >
       <Spotlight />
 
       <div className="flex justify-center relative my-16 md:my-20 z-10">

@@ -97,15 +97,18 @@ const Projects = () => {
                   onClick={(e) => e.stopPropagation()}
                 >
                   <div className="flex gap-3">
-                    <a
-                      href={project.links.github}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="text-slate-400 hover:text-emerald-400 transition-colors p-1 cursor-pointer"
-                      aria-label="GitHub"
-                    >
-                      <FiGithub className="w-5 h-5" />
-                    </a>
+                    {project.links.github && (
+                      <a
+                        href={project.links.github}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="text-slate-400 hover:text-emerald-400 transition-colors p-1 cursor-pointer"
+                        aria-label="GitHub"
+                      >
+                        <FiGithub className="w-5 h-5" />
+                      </a>
+                    )}
+
                     <a
                       href={project.links.live}
                       target="_blank"
