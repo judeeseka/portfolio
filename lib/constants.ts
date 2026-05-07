@@ -8,6 +8,39 @@ export const navItems = [
 
 export const projects = [
   {
+    id: 1,
+    title: "Dokwa Suite",
+    description:
+      "A finance operations platform designed to centralize financial visibility and operational workflows.",
+    tags: ["Nextjs", "TypeScript", "Tailwind"],
+    role: "Sole Frontend Engineer",
+    techStackShort: "Nextjs, TypeScript, Tailwind, Zustand",
+    imageUrl: "/dokwa.png",
+    imageWidth: 1318,
+    imageHeight: 619,
+    links: {
+      github: "",
+      live: "https://dokwa.com",
+    },
+    caseStudy: {
+      overview:
+        "Dokwa Suite is a SaaS platform focused on helping operations and finance teams centralize financial visibility, workflow coordination, and operational decision-making. The platform reduces fragmented processes by consolidating data and workflows from multiple business tools into a unified interface.",
+      // audience:
+      //   "End-users looking for reliable artisans and service providers, plus artisans managing their bookings and availability.",
+      problem:
+        "Teams relied on fragmented tools for accounting, communication, and operational coordination, resulting in limited financial visibility and a heavy dependence on manual reconciliation processes.",
+      roleOwnership:
+        "Owned the frontend architecture and implementation, collaborating closely with the backend engineer and product designer to translate complex operational workflows into scalable, intuitive user experiences.",
+      keyDecisions: [
+        "Built data-driven dashboards aggregating financial and operational data to improve visibility and reduce manual coordination.",
+        "Implemented AI-powered chat and summarization features to help users extract insights from complex operational data.",
+        "Developed a scalable integration layer for third-party workflow tools, enabling extensible automation capabilities.",
+      ],
+      impact:
+        "The platform centralized operational and financial workflows into a unified system, improving visibility across operational processes and financial activities while reducing reliance on manual reconciliation and cross-team coordination.",
+    },
+  },
+  {
     id: 2,
     title: "Easyserve",
     description:
