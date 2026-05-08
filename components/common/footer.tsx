@@ -28,7 +28,7 @@ const Footer = () => {
           <FiTwitter className="w-5 h-5" />
         </Link>
         <Link
-          href="https://linkedin.com/in/chinedu-eseka"
+          href="https://www.linkedin.com/in/chinedu-jude-eseka"
           target="_blank"
           rel="noreferrer"
           className="w-10 h-10 flex justify-center items-center rounded-xl border border-slate-700/60 bg-slate-900/50 text-slate-400 hover:text-white hover:border-slate-600 transition-colors"
