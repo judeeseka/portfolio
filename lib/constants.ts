@@ -15,7 +15,7 @@ export const projects = [
     tags: ["Nextjs", "TypeScript", "Tailwind"],
     role: "Sole Frontend Engineer",
     techStackShort: "Nextjs, TypeScript, Tailwind, Zustand",
-    imageUrl: "/dokwa.png",
+    imageUrl: "/dokwa.PNG",
     imageWidth: 1318,
     imageHeight: 619,
     links: {
